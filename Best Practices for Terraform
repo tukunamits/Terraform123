@@ -1,0 +1,50 @@
+Simple Structure
+
+A simple structure is suitable for small and testing projects, with a few resources of varying types and variables. 
+It has a few configuration files, usually one per resource type (or more helper ones together with a main), and no custom modules, because most of the resources are unique and 
+there aren’t enough to be generalized and reused.
+
+Below are the Few Points we need to take as Consideration for Code Structure
+
+1.Deployments Should Use Inputs Over Code Changes
+2. Iterate Over Maps and Objects
+3. Leverage Tfvars Files
+4. Consider Splitting Your Deployments Into Layers
+5. Separate Variables and Inputs Based on Their Functionality
+6.Make Modules Flexible With Multiple Optional Inputs
+7.Follow a standard module structure
+8.Put static files in a separate directory
+9.Protect stateful resources
+10.Reusable modules
+11.Don't configure providers or backends
+12.Split applications into environment-specific subdirectories
+
+A Generic Structure Way of folders for best Practics should be like this
+
+-- SERVICE-DIRECTORY/
+   -- OWNERS
+   -- modules/
+      -- <service-name>/
+         -- main.tf
+         -- variables.tf
+         -- outputs.tf
+         -- provider.tf
+         -- README
+      -- ...other…
+   -- environments/
+      -- dev/
+         -- backend.tf
+         -- main.tf
+
+      -- qa/
+         -- backend.tf
+         -- main.tf
+
+      -- prod/
+         -- backend.tf
+         -- main.tf
+
+
+
+
+Reference we can Take From https://cloud.google.com/docs/terraform/best-practices-for-terraform
