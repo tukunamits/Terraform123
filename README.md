@@ -20,10 +20,4 @@ Apply: On approval, Terraform performs the proposed operations in the correct or
 
 4.Use Cases of Terraform
 
-Manage any infrastructure
-Automate changes
-Standardize configurations
-Collaborate
-Multi Cloud Support
-Community
-Self-service clusters
+Manage any infrastructure,Automate changes,Standardize configurations,Collaborate,Multi Cloud Support,Community,Self-service clusters
